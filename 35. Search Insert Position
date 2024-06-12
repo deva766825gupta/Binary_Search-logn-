@@ -1,0 +1,8 @@
+class Solution {
+public:
+    int searchInsert(vector<int>& nums, int target) {
+        return lower_bound(nums.begin(),nums.end(),target)-nums.begin();
+    }
+};
+// lower bound function in cpp gives small index such that arr[ind] >= target 
+// also in upper bound  gives small index such that arr[ind] > target 
